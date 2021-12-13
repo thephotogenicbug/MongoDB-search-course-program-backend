@@ -12,6 +12,11 @@ app.use(express.json());
 const connectDB = require("./config/db");
 connectDB();
 
+
+// routes 
+const programsRoutes = require('./routes/programsRoutes')
+app.use('/api/program', programsRoutes)
+
 // listen to port
 const PORT = process.env.PORT || 5000;
 
