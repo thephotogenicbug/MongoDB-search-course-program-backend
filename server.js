@@ -19,6 +19,9 @@ app.use("/api/program", programsRoutes);
 const coursesRoutes = require("./routes/coursesRoutes");
 app.use("/api/course", coursesRoutes);
 
+const userRoutes = require("./routes/userRoutes");
+app.use("/api/user", userRoutes);
+
 // listen to port
 const PORT = process.env.PORT || 5000;
 
